@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://picsum.photos/id/19/1920/1080");
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+#image-sidebar {
+    min-width: 33%;
+    color: white;
+}
+
+#logo-bar {
+    font-family: 'Noto Serif JP', serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 4em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70%;
+    padding: 20px;
+}
+
+#logo-svg {
+    width: 1.5em;
+    height: 1.5em;
+    filter: invert(100%) sepia(100%) saturate(16%) hue-rotate(207deg) brightness(103%) contrast(100%);
+}
+
+#sign-up-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    --sign-up-section-padding-left: 64px;
+    --sign-up-section-padding-right: 200px;
+}
+
+#sign-up-section #purpose {
+    font-family: 'Noto Serif JP', serif;
+    background-color: rgb(241, 240, 240);
+    padding-left: var(--sign-up-section-padding-left);
+    padding-right: var(--sign-up-section-padding-right);
+    padding-top: 6em;
+    padding-bottom: 2.5em;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#sign-up-section #form {
+    background-color: white;
+    padding-left: var(--sign-up-section-padding-left);
+    padding-right: var(--sign-up-section-padding-right);
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#form>p {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+#form-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 100px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control>label {
+    color: rgb(61, 60, 60);
+    font-size: 0.85em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 0.3em;
+}
+
+.form-control input {
+    border: 2px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 1.1em;
+    padding: 0.4em 0.6em 0.4em 0.6em;
+    width: 15em;
+}
+
+input.passwords-not-matching {
+    border: 2px solid red;
+}
+
+input.passwords-matching {
+    border: 2px solid green;
+}
+
+.form-control input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+#passwords-match-note {
+    color: red;
+    font-size: 0.8em;
+}
+
+#sign-up-section #submission {
+    background-color: rgb(241, 240, 240);
+    padding-left: var(--sign-up-section-padding-left);
+    padding-right: var(--sign-up-section-padding-right);
+    padding-top: 32px;
+    padding-bottom: 100px;
+}
+
+#submission>button {
+    font-size: 1.2em;
+    font-weight: 900;
+    color: white;
+    background-color: #517153;
+    padding: 0.8em 3em 0.8em 3em;
+    border: none;
+    border-radius: 8px;
+}
+
+#submission>button:hover {
+    cursor: pointer;
+}
+
+#submission p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+#submission p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #517153;
+}

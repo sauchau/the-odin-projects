@@ -1,0 +1,66 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F0071;
+}
+
+#instructions {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#play-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 32px;
+    border: 3px solid #FB2576;
+    border-radius: 16px;
+    background-color: #0002A1;
+    color: #FB2576;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#start-btn {
+    align-self: stretch;
+    padding: 5px;
+    background-color: #FB2576;
+    color: #0002A1;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 5px #999;
+}
+
+#start-btn:active {
+    background-color: #FB2576;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#moves-container button {
+    padding: 5px;
+    background-color: #FB2576;
+    color: #0002A1;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 5px #999;
+}
+
+#moves-container button:active {
+    background-color: #FB2576;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
