@@ -6,8 +6,6 @@ const confirmBtn = document.getElementById("confirm-btn")
 const bookTitleEl = document.getElementById("book-title")
 const bookAuthorEl = document.getElementById("book-author")
 const bookPagesEl = document.getElementById("book-pages")
-const bookReadEl = document.querySelector("input[name=book-read]")
-
 
 function Book(title, author, pages, read) {
     this.title = title
@@ -78,7 +76,8 @@ addBookBtn.addEventListener("click", () => {
 
 addBookDialog.addEventListener("close", () => {
     if (addBookDialog.returnValue === "add_new_book") {
-        addBookToLibrary(bookTitleEl.value, bookAuthorEl.value, bookPagesEl.value, bookReadEl.value)
+        const selectedRadioValue = document.querySelector("input[name=book-read]:checked").value
+        addBookToLibrary(bookTitleEl.value, bookAuthorEl.value, bookPagesEl.value, selectedRadioValue)
     }
     showBooks()
 })
