@@ -1,0 +1,69 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell {
+    min-width: 3rem;
+    min-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 2em;
+    transition: 0.3s;
+}
+
+.cell:hover {
+    background-color: black;
+    color: white;
+}
+
+.flash {
+    -webkit-animation-name: flash-animation;
+    -webkit-animation-duration: 0.3s;
+
+    animation-name: flash-animation;
+    animation-duration: 0.3s;
+}
+
+@-webkit-keyframes flash-animation {
+    from {
+        background: red;
+    }
+
+    to {
+        background: default;
+    }
+}
+
+@keyframes flash-animation {
+    from {
+        background: red;
+    }
+
+    to {
+        background: default;
+    }
+}
+
+.hidden {
+    display: none;
+}
