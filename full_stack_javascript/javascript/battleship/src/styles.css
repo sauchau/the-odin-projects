@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+}
+
+.gameboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.cell {
+    min-width: 2em;
+    min-height: 2em;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.not-attacked {
+    transition: 0.2s;
+}
+
+.not-attacked:hover {
+    background-color: lightgrey;
+}
+
+.attacked {
+    background-color: red;
+}
+
+.divider {
+    width: 2px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#randomize {
+    background-color: yellow;
+}
+
+#restart {
+    background-color: red;
+    color: white;
+}
+
+@keyframes discoLights {
+    0% {
+        background-color: red;
+    }
+
+    10% {
+        background-color: yellow;
+    }
+
+    20% {
+        background-color: green;
+    }
+
+    30% {
+        background-color: blue;
+    }
+
+    40% {
+        background-color: purple;
+    }
+
+    50% {
+        background-color: pink;
+    }
+
+    60% {
+        background-color: orange;
+    }
+
+    70% {
+        background-color: cyan;
+    }
+
+    80% {
+        background-color: magenta;
+    }
+
+    90% {
+        background-color: lime;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.won-effect {
+    animation: discoLights 1s infinite;
+}
